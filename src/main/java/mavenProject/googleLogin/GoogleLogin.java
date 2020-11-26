@@ -15,10 +15,10 @@ public class GoogleLogin {
 	@FindBy(xpath = "//div[@class='Xb9hP']/input[@class='whsOnd zHQkBf' and @type='password']")
 	public WebElement input_Password;
 
-	@FindBy(xpath = "//body/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/button[1]/div[2]")
+	@FindBy(xpath = "//div[@class='VfPpkd-RLmnJb'][1]")
 	public WebElement username_Next;
 
-	@FindBy(xpath = "//body/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/button[1]/div[2]")
+	@FindBy(xpath = "//div[@class='VfPpkd-RLmnJb'][1]")
 	public WebElement password_Next;
 
 	@FindBy(xpath = "//span[contains(text(),'Wrong password. Try again or click Forgot password')]")
