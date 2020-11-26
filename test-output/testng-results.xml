@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-26T13:17:53 IST" name="Default suite" finished-at="2020-11-26T13:19:48 IST" duration-ms="114485">
+    <groups>
+    </groups>
+    <test started-at="2020-11-26T13:17:53 IST" name="Default test" finished-at="2020-11-26T13:19:48 IST" duration-ms="114485">
+      <class name="mavenProject.googleLogin.TestNG">
+        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:17:53 IST" name="initialMethod" finished-at="2020-11-26T13:18:01 IST" duration-ms="7794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialMethod -->
+        <test-method signature="bothValid()[pri:1, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:18:01 IST" name="bothValid" finished-at="2020-11-26T13:18:08 IST" duration-ms="7232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bothValid -->
+        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:18:08 IST" name="finalmethod" finished-at="2020-11-26T13:18:10 IST" duration-ms="1902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalmethod -->
+        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:18:10 IST" name="initialMethod" finished-at="2020-11-26T13:18:38 IST" duration-ms="27896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialMethod -->
+        <test-method signature="invalidpassword()[pri:2, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:18:38 IST" name="invalidpassword" finished-at="2020-11-26T13:18:40 IST" duration-ms="2524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidpassword -->
+        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:18:40 IST" name="finalmethod" finished-at="2020-11-26T13:18:41 IST" duration-ms="860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalmethod -->
+        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:18:41 IST" name="initialMethod" finished-at="2020-11-26T13:18:49 IST" duration-ms="7928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialMethod -->
+        <test-method signature="invalidUsername()[pri:3, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:18:49 IST" name="invalidUsername" finished-at="2020-11-26T13:18:50 IST" duration-ms="915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:18:50 IST" name="finalmethod" finished-at="2020-11-26T13:18:51 IST" duration-ms="1332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalmethod -->
+        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:18:51 IST" name="initialMethod" finished-at="2020-11-26T13:19:00 IST" duration-ms="8125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialMethod -->
+        <test-method signature="bothInvalid()[pri:4, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:19:00 IST" name="bothInvalid" finished-at="2020-11-26T13:19:00 IST" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bothInvalid -->
+        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:19:00 IST" name="finalmethod" finished-at="2020-11-26T13:19:01 IST" duration-ms="846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalmethod -->
+        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:19:01 IST" name="initialMethod" finished-at="2020-11-26T13:19:08 IST" duration-ms="7222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialMethod -->
+        <test-method signature="clickNextPassword()[pri:5, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:19:08 IST" name="clickNextPassword" finished-at="2020-11-26T13:19:10 IST" duration-ms="1975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNextPassword -->
+        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:19:10 IST" name="finalmethod" finished-at="2020-11-26T13:19:11 IST" duration-ms="879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalmethod -->
+        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:19:11 IST" name="initialMethod" finished-at="2020-11-26T13:19:47 IST" duration-ms="35223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialMethod -->
+        <test-method signature="clickNextUsername()[pri:6, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:19:47 IST" name="clickNextUsername" finished-at="2020-11-26T13:19:47 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNextUsername -->
+        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@5f16132a]" started-at="2020-11-26T13:19:47 IST" name="finalmethod" finished-at="2020-11-26T13:19:48 IST" duration-ms="842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalmethod -->
+      </class> <!-- mavenProject.googleLogin.TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
