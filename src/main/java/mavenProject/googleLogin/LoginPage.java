@@ -71,7 +71,9 @@ public class LoginPage extends BasePage {
 		wait.until(ExpectedConditions.visibilityOf(input_Password));
 		input_Password.sendKeys(password);
 		password_Next.click();
-		wait.until(ExpectedConditions.visibilityOf(wrong_Password));
+		System.out.println(wrong_Password.toString());
+		System.out.println(wrong_Password);
+		basePage.delay(wrong_Password);
 		Assert.assertEquals(getExcelData(0), wrong_Password.getText());
 		System.out.println(wrong_Password.getText());
 		System.out.println("Could not login because of invalid Password");

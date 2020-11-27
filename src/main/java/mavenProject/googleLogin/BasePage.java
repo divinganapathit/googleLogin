@@ -45,8 +45,11 @@ public class BasePage {
 
 	}
 
-	public void delay(String locatorInfo) {
+	public void delay(WebElement xPath) {
 
+		String uneditedLocator = xPath.toString();
+		String locatorInfo = uneditedLocator.substring(80);
+		System.out.println(locatorInfo);
 		double startTime = System.currentTimeMillis();
 		List<WebElement> findElement = driver.findElements(By.xpath(locatorInfo));
 

@@ -6,8 +6,8 @@
       <class name="mavenProject.googleLogin.TestNG">
         <methods>
           <include name="initialMethod"/>
-          <include name="bothValid"/>
           <include name="finalmethod"/>
+          <include name="invalidpassword"/>
         </methods>
       </class> <!-- mavenProject.googleLogin.TestNG -->
     </classes>
