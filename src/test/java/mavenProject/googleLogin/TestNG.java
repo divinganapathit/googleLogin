@@ -1,5 +1,6 @@
 package mavenProject.googleLogin;
 
+import java.io.IOException;
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
@@ -39,62 +40,62 @@ public class TestNG {
 		String u1 = getValue.getString("v_Username");
 		String p1 = getValue.getString("v_Password");
 
-		GoogleLogin login = new GoogleLogin(driver);
+		LoginPage login = new LoginPage(driver);
 
 		login.bothValid(driver, u1, p1);
 
 	}
 
 	@Test(priority = 2, enabled = true)
-	public void invalidpassword() {
+	public void invalidpassword() throws IOException {
 
 		ResourceBundle getValue = ResourceBundle.getBundle("inputData");
 
-		GoogleLogin login = new GoogleLogin(driver);
+		LoginPage login = new LoginPage(driver);
 
 		login.invalidPassword(driver, getValue.getString("v1_Username"), getValue.getString("i_Password"));
 
 	}
 
 	@Test(priority = 3, enabled = true)
-	public void invalidUsername() {
+	public void invalidUsername() throws IOException {
 
 		ResourceBundle getValue = ResourceBundle.getBundle("inputData");
 
-		GoogleLogin login = new GoogleLogin(driver);
+		LoginPage login = new LoginPage(driver);
 
 		login.invalidUsername(driver, getValue.getString("i_Username"));
 
 	}
 
 	@Test(priority = 4, enabled = true)
-	public void bothInvalid() {
+	public void bothInvalid() throws IOException {
 
 		ResourceBundle getValue = ResourceBundle.getBundle("inputData");
 
-		GoogleLogin login = new GoogleLogin(driver);
+		LoginPage login = new LoginPage(driver);
 
 		login.bothInvalid(driver, getValue.getString("i2_Username"));
 
 	}
 
 	@Test(priority = 5, enabled = true)
-	public void clickNextPassword() {
+	public void clickNextPassword() throws IOException {
 
 		ResourceBundle getValue = ResourceBundle.getBundle("inputData");
 
-		GoogleLogin login = new GoogleLogin(driver);
+		LoginPage login = new LoginPage(driver);
 
-		login.clickNextWithoutPassword(driver, getValue.getString("v_Username"));
+		login.clickNextWithoutEnteringPassword(driver, getValue.getString("v_Username"));
 
 	}
 
 	@Test(priority = 6, enabled = true)
-	public void clickNextUsername() {
+	public void clickNextUsername() throws IOException {
 
-		GoogleLogin login = new GoogleLogin(driver);
+		LoginPage login = new LoginPage(driver);
 
-		login.clickNextWithoutUsername();
+		login.clickNextWithoutEnteringUsername();
 
 	}
 

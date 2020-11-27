@@ -23,7 +23,7 @@ public class TestJava {
 
 		ResourceBundle getValue = ResourceBundle.getBundle("inputData");
 
-		GoogleLogin login = new GoogleLogin(driver);
+		LoginPage login = new LoginPage(driver);
 
 		try {
 
@@ -38,9 +38,9 @@ public class TestJava {
 
 //			login.bothInvalid(driver, getValue.getString("i2_Username"));
 
-//			login.clickNextWithoutPassword(driver, u1);
+//			login.clickNextWithoutEnteringPassword(driver, u1);
 
-//			login.clickNextWithoutUsername();
+//			login.clickNextWithoutEnteringUsername();
 
 		} catch (Exception e) {
 
