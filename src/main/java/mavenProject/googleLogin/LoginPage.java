@@ -39,6 +39,9 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//a[@id='gb_71' and @class='gb_Hb gb_fg gb_ng gb_2e gb_7c']")
 	public WebElement logout_button;
 
+	
+	BasePage basePage =new BasePage();
+	
 	public LoginPage(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
@@ -47,7 +50,7 @@ public class LoginPage extends BasePage {
 
 	public void bothValid(WebDriver driver, String username, String password) {
 
-//		basePage.entersLoginPageURL();
+		basePage.entersLoginPageURL();
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -64,7 +67,7 @@ public class LoginPage extends BasePage {
 
 	public void invalidPassword(WebDriver driver, String username, String password) throws IOException {
 
-//		basePage.entersLoginPageURL();
+		basePage.entersLoginPageURL();
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -82,7 +85,7 @@ public class LoginPage extends BasePage {
 
 	public void invalidUsername(WebDriver driver, String username) throws IOException {
 
-//		basePage.entersLoginPageURL();
+		basePage.entersLoginPageURL();
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -95,7 +98,7 @@ public class LoginPage extends BasePage {
 
 	public void bothInvalid(WebDriver driver, String username) throws IOException {
 
-//		basePage.entersLoginPageURL();
+		basePage.entersLoginPageURL();
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -109,7 +112,7 @@ public class LoginPage extends BasePage {
 
 	public void clickNextWithoutEnteringPassword(WebDriver driver, String username) throws IOException {
 
-//		basePage.entersLoginPageURL();
+		basePage.entersLoginPageURL();
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -123,7 +126,7 @@ public class LoginPage extends BasePage {
 
 	public void clickNextWithoutEnteringUsername() throws IOException {
 
-//		basePage.entersLoginPageURL();
+		basePage.entersLoginPageURL();
 		username_Next.click();
 		softAssert.assertEquals("Enter an email or phone number", username_NotFound.getText());
 		softAssert.assertTrue(getExcelData(4) == username_NotFound.getText(), "true");

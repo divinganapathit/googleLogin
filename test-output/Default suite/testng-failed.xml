@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mavenProject.googleLogin.TestNG">
+      <class name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
         <methods>
-          <include name="initialMethod"/>
-          <include name="finalmethod"/>
+          <include name="testEnvironment"/>
+          <include name="bothValid"/>
+          <include name="clickNextPassword"/>
+          <include name="invalidUsername"/>
+          <include name="Endmethod"/>
+          <include name="clickNextUsername"/>
           <include name="invalidpassword"/>
+          <include name="bothInvalid"/>
         </methods>
-      </class> <!-- mavenProject.googleLogin.TestNG -->
+      </class> <!-- mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

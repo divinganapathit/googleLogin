@@ -4,16 +4,16 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="option" value="true"/>
     <classes>
-      <class name="mavenProject.googleLogin.TestNG_2">
+      <class name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
         <methods>
+          <include name="testEnvironment"/>
           <include name="bothValid"/>
-          <include name="invalidpassword"/>
-          <include name="entersLoginPageURL"/>
-          <include name="bothInvalid"/>
-          <include name="Endmethod"/>
           <include name="invalidUsername"/>
+          <include name="Endmethod"/>
+          <include name="invalidpassword"/>
+          <include name="bothInvalid"/>
         </methods>
-      </class> <!-- mavenProject.googleLogin.TestNG_2 -->
+      </class> <!-- mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

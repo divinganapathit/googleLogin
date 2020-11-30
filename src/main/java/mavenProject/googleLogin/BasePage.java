@@ -9,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 
 import mavenProject.utilities.ExcelData;
@@ -17,9 +16,9 @@ import mavenProject.utilities.ExcelData;
 public class BasePage {
 
 	static LoginPage login;
-	static WebDriver driver =new ChromeDriver();
+	WebDriver driver;
 	public static ResourceBundle getvalue = ResourceBundle.getBundle("inputData");
-	public static BasePage basePage = new BasePage();
+//	public BasePage basePage = new BasePage(driver);
 	public static SoftAssert softAssert = new SoftAssert();
 
 	public static String getExcelData(int index) throws IOException {
@@ -30,12 +29,27 @@ public class BasePage {
 		return excelValue.get(index);
 
 	}
+	
+	public WebDriver driverMethod() {
+		
+		System.setProperty("webdriver.chrome.driver",
+				System.getProperty("user.dir") + "\\src\\resource\\java\\chromedriver.exe");
+		driver = new ChromeDriver();
+		return driver;
+		
+	}
 
-	@BeforeMethod
+//	public BasePage(WebDriver driver) {
+//
+//		System.setProperty("webdriver.chrome.driver",
+//				System.getProperty("user.dir") + "\\src\\resource\\java\\chromedriver.exe");
+//		this.driver = driver;
+//
+//	}
+//
 	public void entersLoginPageURL() {
 
 		driver.navigate().to(getData("url"));
-		login = new LoginPage(driver);
 
 	}
 
@@ -45,34 +59,30 @@ public class BasePage {
 
 	}
 
-	public void delay(WebElement xPath) {
+	public boolean delay(WebElement xPath) {
 
 		String uneditedLocator = xPath.toString();
-		String locatorInfo = uneditedLocator.substring(80);
+		String locatorInfoUnedited = uneditedLocator.substring(80);
+		System.out.println(locatorInfoUnedited);
+		int n = locatorInfoUnedited.length();
+		String locatorInfo = locatorInfoUnedited.substring(0, n - 1);
 		System.out.println(locatorInfo);
-		double startTime = System.currentTimeMillis();
+		long startTime = System.currentTimeMillis();
 		List<WebElement> findElement = driver.findElements(By.xpath(locatorInfo));
+		boolean status = findElement.size() > 0;
+		long waitTime = 0;
 
-		boolean status = false;
-		int i = 0;
-		double waitTime = 0;
-		while (i == 0 && waitTime < 180000) {
-
+		while (!(status) && (waitTime < 120000)) {
 			findElement = driver.findElements(By.xpath(locatorInfo));
-			i = findElement.size();
-			if (i > 0) {
-				status = true;
-				break;
-			}
-			double endTime = System.currentTimeMillis();
-			waitTime = endTime - startTime;
-
+			status = findElement.size() > 0;
+			waitTime = System.currentTimeMillis() - startTime;
+			System.out.println(waitTime);
 		}
 		if (status == false) {
-
 			System.out.println("Element not Found!!");
-
 		}
+
+		return status;
 	}
 
 }

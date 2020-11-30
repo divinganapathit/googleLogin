@@ -2,43 +2,47 @@ package mavenProject.googleLogin;
 
 import java.io.IOException;
 
-import org.testng.annotations.AfterMethod;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class TestNG_2 extends BasePage {
+public class TestLoginGoogleAccountUsingTestNG_DifferentClasses extends TestEnvironment {
+
+	BasePage basePage = new BasePage();
+	WebDriver driver = basePage.driverMethod();
+	LoginPage login = new LoginPage(driver);
 
 	@Test(priority = 1, enabled = true)
 	public void bothValid() {
 
-		login.bothValid(TestEnvironment.driver, getData("v_Username"), getData("v_Password"));
+		login.bothValid(driver, BasePage.getData("v_Username"), BasePage.getData("v_Password"));
 
 	}
 
 	@Test(priority = 2, enabled = true)
 	public void invalidpassword() throws IOException {
 
-		login.invalidPassword(driver, getData("v1_Username"), getData("i_Password"));
+		login.invalidPassword(driver, BasePage.getData("v1_Username"), BasePage.getData("i_Password"));
 
 	}
 
 	@Test(priority = 3, enabled = true)
 	public void invalidUsername() throws IOException {
 
-		login.invalidUsername(driver, getData("v1_Username"));
+		login.invalidUsername(driver, BasePage.getData("v1_Username"));
 
 	}
 
 	@Test(priority = 4, enabled = true)
 	public void bothInvalid() throws IOException {
 
-		login.bothInvalid(driver, getData("i2_Username"));
+		login.bothInvalid(driver, BasePage.getData("i2_Username"));
 
 	}
 
 	@Test(priority = 5, enabled = true)
 	public void clickNextPassword() throws IOException {
 
-		login.clickNextWithoutEnteringPassword(driver, getData("v_Username"));
+		login.clickNextWithoutEnteringPassword(driver, BasePage.getData("v_Username"));
 
 	}
 
@@ -48,12 +52,5 @@ public class TestNG_2 extends BasePage {
 		login.clickNextWithoutEnteringUsername();
 
 	}
-	
-	@AfterMethod
-	public void Endmethod() {
 
-		driver.close();
-		driver.quit();
-
-	}
 }

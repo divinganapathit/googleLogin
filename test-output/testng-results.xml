@@ -1,88 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="2" total="6" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-27T18:29:52 IST" name="Default suite" finished-at="2020-11-27T18:31:22 IST" duration-ms="89934">
+  <suite started-at="2020-11-30T18:26:24 IST" name="Suite" finished-at="2020-11-30T18:26:24 IST" duration-ms="200">
     <groups>
     </groups>
-    <test started-at="2020-11-27T18:29:52 IST" name="Default test" finished-at="2020-11-27T18:31:22 IST" duration-ms="89934">
-      <class name="mavenProject.googleLogin.TestNG">
-        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:29:52 IST" name="initialMethod" finished-at="2020-11-27T18:30:01 IST" duration-ms="8964" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialMethod -->
-        <test-method signature="bothValid()[pri:1, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:01 IST" name="bothValid" finished-at="2020-11-27T18:30:07 IST" duration-ms="5719" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bothValid -->
-        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:07 IST" name="finalmethod" finished-at="2020-11-27T18:30:08 IST" duration-ms="772" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalmethod -->
-        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:08 IST" name="initialMethod" finished-at="2020-11-27T18:30:15 IST" duration-ms="7557" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialMethod -->
-        <test-method signature="invalidpassword()[pri:2, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:15 IST" name="invalidpassword" finished-at="2020-11-27T18:30:18 IST" duration-ms="2663" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+    <test started-at="2020-11-30T18:26:24 IST" name="Test" finished-at="2020-11-30T18:26:24 IST" duration-ms="200">
+      <class name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
+        <test-method is-config="true" signature="testEnvironment(java.lang.String)[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="testEnvironment" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1606740984048" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //span[contains(text(),'Wrong password. Try again or click Forgot password')]] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[contains(text(),'Wrong password. Try again or click Forgot password')]]' is not a valid XPath expression.
-  (Session info: chrome=87.0.4280.66)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 25d45b495707b49a6a5055fb46dbf5a7
-*** Element info: {Using=xpath, value=//span[contains(text(),'Wrong password. Try again or click Forgot password')]]}]]>
+              <![CDATA[
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[contains(text(),'Wrong password. Try again or click Forgot password')]] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[contains(text(),'Wrong password. Try again or click Forgot password')]]' is not a valid XPath expression.
-  (Session info: chrome=87.0.4280.66)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 25d45b495707b49a6a5055fb46dbf5a7
-*** Element info: {Using=xpath, value=//span[contains(text(),'Wrong password. Try again or click Forgot password')]]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-at mavenProject.googleLogin.BasePage.delay(BasePage.java:54)
-at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:76)
-at mavenProject.googleLogin.TestNG.invalidpassword(TestNG.java:56)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
 at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -95,63 +36,147 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnvironment -->
+        <test-method signature="bothValid()[pri:1, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="bothValid" finished-at="2020-11-30T18:26:24 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bothValid -->
+        <test-method signature="invalidpassword()[pri:2, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="invalidpassword" finished-at="2020-11-30T18:26:24 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidpassword -->
-        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:18 IST" name="finalmethod" finished-at="2020-11-27T18:30:19 IST" duration-ms="913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalmethod -->
-        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:19 IST" name="initialMethod" finished-at="2020-11-27T18:30:48 IST" duration-ms="28778" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialMethod -->
-        <test-method signature="invalidUsername()[pri:3, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:48 IST" name="invalidUsername" finished-at="2020-11-27T18:30:50 IST" duration-ms="1780" status="PASS">
+        <test-method signature="invalidUsername()[pri:3, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="invalidUsername" finished-at="2020-11-30T18:26:24 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUsername -->
-        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:50 IST" name="finalmethod" finished-at="2020-11-27T18:30:51 IST" duration-ms="897" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalmethod -->
-        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:51 IST" name="initialMethod" finished-at="2020-11-27T18:30:58 IST" duration-ms="7705" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialMethod -->
-        <test-method signature="bothInvalid()[pri:4, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:58 IST" name="bothInvalid" finished-at="2020-11-27T18:30:59 IST" duration-ms="891" status="PASS">
+        <test-method signature="bothInvalid()[pri:4, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="bothInvalid" finished-at="2020-11-30T18:26:24 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bothInvalid -->
-        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:30:59 IST" name="finalmethod" finished-at="2020-11-27T18:31:00 IST" duration-ms="814" status="PASS">
+        <test-method is-config="true" signature="Endmethod()[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="Endmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1606740984585" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- finalmethod -->
-        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:31:00 IST" name="initialMethod" finished-at="2020-11-27T18:31:08 IST" duration-ms="8529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialMethod -->
-        <test-method signature="clickNextPassword()[pri:5, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:31:08 IST" name="clickNextPassword" finished-at="2020-11-27T18:31:11 IST" duration-ms="2042" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickNextPassword -->
-        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:31:11 IST" name="finalmethod" finished-at="2020-11-27T18:31:11 IST" duration-ms="880" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalmethod -->
-        <test-method is-config="true" signature="initialMethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:31:11 IST" name="initialMethod" finished-at="2020-11-27T18:31:21 IST" duration-ms="9710" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialMethod -->
-        <test-method signature="clickNextUsername()[pri:6, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:31:21 IST" name="clickNextUsername" finished-at="2020-11-27T18:31:21 IST" duration-ms="372" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickNextUsername -->
-        <test-method is-config="true" signature="finalmethod()[pri:0, instance:mavenProject.googleLogin.TestNG@dd0c991]" started-at="2020-11-27T18:31:21 IST" name="finalmethod" finished-at="2020-11-27T18:31:22 IST" duration-ms="889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalmethod -->
-      </class> <!-- mavenProject.googleLogin.TestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Endmethod -->
+      </class> <!-- mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

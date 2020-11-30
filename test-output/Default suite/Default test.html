@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 27 18:29:52 IST 2020</td>
+<td>Started on:</td><td>Mon Nov 30 16:10:47 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>89 seconds (89934 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (82 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,56 +68,25 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='mavenProject.googleLogin.TestNG.invalidpassword()'><b>invalidpassword</b><br>Test class: mavenProject.googleLogin.TestNG</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[contains(text(),&apos;Wrong password. Try again or click Forgot password&apos;)]] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//span[contains(text(),&apos;Wrong password. Try again or click Forgot password&apos;)]]&apos; is not a valid XPath expression.
-  (Session info: chrome=87.0.4280.66)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 25d45b495707b49a6a5055fb46dbf5a7
-*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Wrong password. Try again or click Forgot password&apos;)]]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at mavenProject.googleLogin.BasePage.delay(BasePage.java:54)
-	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:76)
-	at mavenProject.googleLogin.TestNG.invalidpassword(TestNG.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.testEnvironment()'><b>testEnvironment</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
@@ -131,49 +100,18 @@ Session ID: 25d45b495707b49a6a5055fb46dbf5a7
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1335914322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1335914322'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[contains(text(),&apos;Wrong password. Try again or click Forgot password&apos;)]] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//span[contains(text(),&apos;Wrong password. Try again or click Forgot password&apos;)]]&apos; is not a valid XPath expression.
-  (Session info: chrome=87.0.4280.66)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 25d45b495707b49a6a5055fb46dbf5a7
-*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Wrong password. Try again or click Forgot password&apos;)]]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at mavenProject.googleLogin.BasePage.delay(BasePage.java:54)
-	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:76)
-	at mavenProject.googleLogin.TestNG.invalidpassword(TestNG.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1443900956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1443900956'><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
@@ -188,41 +126,353 @@ Session ID: 25d45b495707b49a6a5055fb46dbf5a7
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>mavenProject.googleLogin.TestNG@dd0c991</td></tr>
+<td>-1606732847</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@59fc684e</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='mavenProject.googleLogin.TestNG.bothInvalid()'><b>bothInvalid</b><br>Test class: mavenProject.googleLogin.TestNG</td>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.Endmethod()'><b>Endmethod</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
 <td></td>
+<td>-1606732847</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@59fc684e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid()'><b>bothInvalid</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace302987494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace302987494'><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>mavenProject.googleLogin.TestNG@dd0c991</td></tr>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@59fc684e</td></tr>
 <tr>
-<td title='mavenProject.googleLogin.TestNG.bothValid()'><b>bothValid</b><br>Test class: mavenProject.googleLogin.TestNG</td>
-<td></td>
-<td>5</td>
-<td>mavenProject.googleLogin.TestNG@dd0c991</td></tr>
-<tr>
-<td title='mavenProject.googleLogin.TestNG.clickNextPassword()'><b>clickNextPassword</b><br>Test class: mavenProject.googleLogin.TestNG</td>
-<td></td>
-<td>2</td>
-<td>mavenProject.googleLogin.TestNG@dd0c991</td></tr>
-<tr>
-<td title='mavenProject.googleLogin.TestNG.clickNextUsername()'><b>clickNextUsername</b><br>Test class: mavenProject.googleLogin.TestNG</td>
-<td></td>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid()'><b>bothValid</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1731137986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1731137986'><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>mavenProject.googleLogin.TestNG@dd0c991</td></tr>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@59fc684e</td></tr>
 <tr>
-<td title='mavenProject.googleLogin.TestNG.invalidUsername()'><b>invalidUsername</b><br>Test class: mavenProject.googleLogin.TestNG</td>
-<td></td>
-<td>1</td>
-<td>mavenProject.googleLogin.TestNG@dd0c991</td></tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword()'><b>clickNextPassword</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2047744862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2047744862'><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@59fc684e</td></tr>
+<tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername()'><b>clickNextUsername</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1882116496", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1882116496'><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@59fc684e</td></tr>
+<tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername()'><b>invalidUsername</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1892869131", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1892869131'><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@59fc684e</td></tr>
+<tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword()'><b>invalidpassword</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace626393072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace626393072'><pre>org.testng.TestNGException: 
+Parameter &apos;option&apos; is required by BeforeTest on method testEnvironment but has not been marked @Optional or defined
+in C:\Users\Com\AppData\Local\Temp\testng-eclipse-522264211\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@59fc684e</td></tr>
 </table><p>
 </body>
 </html>
