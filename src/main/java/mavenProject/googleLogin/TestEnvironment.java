@@ -15,51 +15,36 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 public class TestEnvironment {
-
 	static WebDriver driver;
 
-	@BeforeMethod
-	@Parameters("option")
+	@BeforeSuite(alwaysRun = true)
+	@Parameters({"option"})
 	public void testEnvironment(String option) {
-
 		System.out.println(option);
-		if (option.contentEquals("false") == true) {
-			System.setProperty("webdriver.chrome.driver",
-			System.getProperty("user.dir") + "\\src\\resource\\java\\chromedriver.exe");
-
+		System.setProperty("webdriver.chrome.driver",
+				System.getProperty("user.dir") + "\\src\\resource\\java\\chromedriver.exe");
+		if (option.contentEquals("false")) {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		}
-		if (option.contentEquals("true") == true) {
-
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		} else {
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("-incognito");
+			options.addArguments("--incognito");
+			options.addArguments("--disable-popup-blocking");
+			options.addArguments("test-type");
+			options.addArguments("--disable-notifications");
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\src\\resource\\java\\chromedriver.exe");
-			driver = new ChromeDriver(options);
-
+			driver = new ChromeDriver(capabilities);
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		} else {
-
-			System.out.println("Invalid Input");
-
 		}
-
 	}
 
-	@AfterMethod
+	@AfterSuite(alwaysRun = true)
 	public void Endmethod() {
-
-		driver.close();
 		driver.quit();
-
 	}
 
 }

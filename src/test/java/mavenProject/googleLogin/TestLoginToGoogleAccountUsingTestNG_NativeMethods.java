@@ -42,7 +42,7 @@ public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 		LoginPage login = new LoginPage(driver);
 
-		login.bothValid(driver, u1, p1);
+		login.bothValid(u1, p1);
 
 	}
 
@@ -53,7 +53,7 @@ public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 		LoginPage login = new LoginPage(driver);
 
-		login.invalidPassword(driver, getValue.getString("v1_Username"), getValue.getString("i_Password"));
+		login.invalidPassword(getValue.getString("v1_Username"), getValue.getString("i_Password"));
 
 	}
 
@@ -64,7 +64,7 @@ public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 		LoginPage login = new LoginPage(driver);
 
-		login.invalidUsername(driver, getValue.getString("i_Username"));
+		login.invalidUsername(getValue.getString("i_Username"));
 
 	}
 
@@ -75,7 +75,7 @@ public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 		LoginPage login = new LoginPage(driver);
 
-		login.bothInvalid(driver, getValue.getString("i2_Username"));
+		login.bothInvalid(getValue.getString("i2_Username"));
 
 	}
 
@@ -86,7 +86,7 @@ public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 		LoginPage login = new LoginPage(driver);
 
-		login.clickNextWithoutEnteringPassword(driver, getValue.getString("v_Username"));
+		login.clickNextWithoutEnteringPassword(getValue.getString("v_Username"));
 
 	}
 
@@ -95,7 +95,7 @@ public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 		LoginPage login = new LoginPage(driver);
 
-		login.clickNextWithoutEnteringUsername(driver);
+		login.clickNextWithoutEnteringUsername();
 
 	}
 

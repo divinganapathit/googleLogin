@@ -13,54 +13,28 @@ import org.testng.asserts.SoftAssert;
 import mavenProject.utilities.ExcelData;
 
 public class BasePage {
-	
+
 	WebDriver driver;
+	ResourceBundle getvalue = ResourceBundle.getBundle("inputData");
+	SoftAssert softAssert = new SoftAssert();
 
 	public BasePage(WebDriver driver) {
-
 		this.driver = driver;
-
 	}
 
-	public ResourceBundle getvalue = ResourceBundle.getBundle("inputData");
-	TestEnvironment testEnvironment =new TestEnvironment();
-//	public BasePage basePage = new BasePage(driver);
-	public SoftAssert softAssert = new SoftAssert();
-
 	public String getExcelData(int index) throws IOException {
-
 		ExcelData expectedData = new ExcelData();
 		List<String> excelValue = new ArrayList<String>();
 		excelValue = expectedData.readData();
 		return excelValue.get(index);
 
 	}
-//	
-//	public WebDriver driverMethod() {
-//		
-//		System.setProperty("webdriver.chrome.driver",
-//				System.getProperty("user.dir") + "\\src\\resource\\java\\chromedriver.exe");
-//		driver = new ChromeDriver();
-//		return driver;
-//		
-//	}
-
-
-
-//	public void entersLoginPageURL() {
-//
-//		driver.navigate().to(getData("url"));
-//
-//	}
 
 	public String getData(String key) {
-
 		return getvalue.getString(key);
-
 	}
 
 	public boolean delay(WebElement xPath) {
-
 		String uneditedLocator = xPath.toString();
 		String locatorInfoUnedited = uneditedLocator.substring(80);
 		System.out.println(locatorInfoUnedited);

@@ -1,62 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="0" failed="0" skipped="4">
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-01T13:27:59 IST" name="Suite" finished-at="2020-12-01T13:27:59 IST" duration-ms="72">
+  <suite started-at="2020-12-01T18:23:17 IST" name="Suite" finished-at="2020-12-01T18:23:17 IST" duration-ms="145">
     <groups>
     </groups>
-    <test started-at="2020-12-01T13:27:59 IST" name="Test" finished-at="2020-12-01T13:27:59 IST" duration-ms="72">
+    <test started-at="2020-12-01T18:23:17 IST" name="Test" finished-at="2020-12-01T18:23:17 IST" duration-ms="145">
       <class name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
-        <test-method is-config="true" signature="testEnvironment(java.lang.String)[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="testEnvironment" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1606809479906" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="testEnvironment(java.lang.String)[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:09 IST" name="testEnvironment" finished-at="2020-12-01T18:23:17 IST" duration-ms="7964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnvironment -->
-        <test-method signature="bothValid()[pri:1, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="bothValid" finished-at="2020-12-01T13:27:59 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
-            </message>
+        <test-method signature="bothValid()[pri:1, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="bothValid" finished-at="2020-12-01T18:23:17 IST" duration-ms="10" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+              <![CDATA[java.lang.NullPointerException
+at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:43)
+at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
 at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -69,27 +54,34 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bothValid -->
-        <test-method signature="invalidpassword()[pri:2, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="invalidpassword" finished-at="2020-12-01T13:27:59 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
-            </message>
+        <test-method signature="invalidpassword()[pri:2, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="invalidpassword" finished-at="2020-12-01T18:23:17 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+              <![CDATA[java.lang.NullPointerException
+at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:62)
+at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
 at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -102,27 +94,34 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidpassword -->
-        <test-method signature="invalidUsername()[pri:3, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="invalidUsername" finished-at="2020-12-01T13:27:59 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
-            </message>
+        <test-method signature="invalidUsername()[pri:3, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="invalidUsername" finished-at="2020-12-01T18:23:17 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+              <![CDATA[java.lang.NullPointerException
+at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:82)
+at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
 at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -135,27 +134,34 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUsername -->
-        <test-method signature="bothInvalid()[pri:4, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="bothInvalid" finished-at="2020-12-01T13:27:59 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml]]>
-            </message>
+        <test-method signature="bothInvalid()[pri:4, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="bothInvalid" finished-at="2020-12-01T18:23:17 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'option' is required by BeforeSuite on method testEnvironment but has not been marked @Optional or defined
-in C:\Users\Com\eclipse-workspace\googleLogin\testng1.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+              <![CDATA[java.lang.NullPointerException
+at mavenProject.googleLogin.LoginPage.bothInvalid(LoginPage.java:96)
+at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
 at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -168,11 +174,91 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bothInvalid -->
-        <test-method is-config="true" signature="Endmethod()[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:28:00 IST" name="Endmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1606809480098" status="SKIP">
+        <test-method signature="clickNextPassword()[pri:5, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="clickNextPassword" finished-at="2020-12-01T18:23:17 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:111)
+at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNextPassword -->
+        <test-method signature="clickNextUsername()[pri:6, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="clickNextUsername" finished-at="2020-12-01T18:23:17 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringUsername(LoginPage.java:126)
+at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNextUsername -->
+        <test-method is-config="true" signature="Endmethod()[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="Endmethod" finished-at="2020-12-01T18:23:18 IST" duration-ms="719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Endmethod -->

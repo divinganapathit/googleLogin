@@ -30,7 +30,7 @@ public class TestGoogleLoginWithoutUseTestNG {
 			String u1 = getValue.getString("v_Username");
 			String p1 = getValue.getString("v_Password");
 
-			login.bothValid(driver, u1, p1);
+			login.bothValid( u1, p1);
 
 //			login.invalidPassword(driver, getValue.getString("v1_Username"), getValue.getString("i_Password"));
 

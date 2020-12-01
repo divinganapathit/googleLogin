@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 01 13:28:58 IST 2020</td>
+<td>Started on:</td><td>Tue Dec 01 18:23:17 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28472 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (145 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,194 +68,6 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.testEnvironment()'><b>testEnvironment</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses<br>Parameters: true</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x011BECE3+3337443]
-	Ordinal0 [0x0109F041+2158657]
-	Ordinal0 [0x00F26E50+618064]
-	Ordinal0 [0x00F1D114+577812]
-	Ordinal0 [0x00F1D7DB+579547]
-	Ordinal0 [0x00F1EA45+584261]
-	Ordinal0 [0x00F19A71+563825]
-	Ordinal0 [0x00F27FD0+622544]
-	Ordinal0 [0x00EC6B2D+224045]
-	Ordinal0 [0x00EC5BFC+220156]
-	Ordinal0 [0x00EC181B+202779]
-	Ordinal0 [0x00EA3D74+81268]
-	Ordinal0 [0x00EA4D6E+85358]
-	Ordinal0 [0x00EA4CF9+85241]
-	Ordinal0 [0x010B6F2C+2256684]
-	GetHandleVerifier [0x01342FAC+1478332]
-	GetHandleVerifier [0x01342AFD+1477133]
-	GetHandleVerifier [0x0134AAD8+1509864]
-	GetHandleVerifier [0x0134369E+1480110]
-	Ordinal0 [0x010AD6BD+2217661]
-	Ordinal0 [0x010B89AB+2263467]
-	Ordinal0 [0x010B8AEF+2263791]
-	Ordinal0 [0x010CD363+2347875]
-	BaseThreadInitThunk [0x752C6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77378944+228]
-	RtlGetAppContainerNamedObjectPath [0x77378914+180]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at mavenProject.googleLogin.TestEnvironment.testEnvironment(TestEnvironment.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1420012431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1420012431'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x011BECE3+3337443]
-	Ordinal0 [0x0109F041+2158657]
-	Ordinal0 [0x00F26E50+618064]
-	Ordinal0 [0x00F1D114+577812]
-	Ordinal0 [0x00F1D7DB+579547]
-	Ordinal0 [0x00F1EA45+584261]
-	Ordinal0 [0x00F19A71+563825]
-	Ordinal0 [0x00F27FD0+622544]
-	Ordinal0 [0x00EC6B2D+224045]
-	Ordinal0 [0x00EC5BFC+220156]
-	Ordinal0 [0x00EC181B+202779]
-	Ordinal0 [0x00EA3D74+81268]
-	Ordinal0 [0x00EA4D6E+85358]
-	Ordinal0 [0x00EA4CF9+85241]
-	Ordinal0 [0x010B6F2C+2256684]
-	GetHandleVerifier [0x01342FAC+1478332]
-	GetHandleVerifier [0x01342AFD+1477133]
-	GetHandleVerifier [0x0134AAD8+1509864]
-	GetHandleVerifier [0x0134369E+1480110]
-	Ordinal0 [0x010AD6BD+2217661]
-	Ordinal0 [0x010B89AB+2263467]
-	Ordinal0 [0x010B8AEF+2263791]
-	Ordinal0 [0x010CD363+2347875]
-	BaseThreadInitThunk [0x752C6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77378944+228]
-	RtlGetAppContainerNamedObjectPath [0x77378914+180]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at mavenProject.googleLogin.TestEnvironment.testEnvironment(TestEnvironment.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>13</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@4efc180e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.testEnvironment()'><b>testEnvironment</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td></td>
-<td>-1606809567</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@4efc180e</td></tr>
-<tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.Endmethod()'><b>Endmethod</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td></td>
-<td>-1606809567</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@4efc180e</td></tr>
-<tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.Endmethod()'><b>Endmethod</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td></td>
-<td>-1606809567</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@4efc180e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -263,14 +75,55 @@ remote stacktrace: Backtrace:
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid()'><b>bothInvalid</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.bothInvalid(LoginPage.java:96)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace502891368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace502891368'><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.bothInvalid(LoginPage.java:96)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
+<tr>
 <td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid()'><b>bothValid</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
 <td><div><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:54)
+	at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:43)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace557197074", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace557197074'><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:54)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1091107430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1091107430'><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:43)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -302,16 +155,139 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@4efc180e</td></tr>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
+<tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword()'><b>clickNextPassword</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:111)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace577734751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace577734751'><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:111)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
+<tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername()'><b>clickNextUsername</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringUsername(LoginPage.java:126)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2103569615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2103569615'><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringUsername(LoginPage.java:126)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
+<tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername()'><b>invalidUsername</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
+<td><div><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:82)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1177072083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1177072083'><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:82)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
 <tr>
 <td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword()'><b>invalidpassword</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
 <td><div><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:72)
+	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:62)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace670689666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace670689666'><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:72)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace883678948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace883678948'><pre>java.lang.NullPointerException
+	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:62)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -343,329 +319,7 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@4efc180e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid()'><b>bothInvalid</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x011BECE3+3337443]
-	Ordinal0 [0x0109F041+2158657]
-	Ordinal0 [0x00F26E50+618064]
-	Ordinal0 [0x00F1D114+577812]
-	Ordinal0 [0x00F1D7DB+579547]
-	Ordinal0 [0x00F1EA45+584261]
-	Ordinal0 [0x00F19A71+563825]
-	Ordinal0 [0x00F27FD0+622544]
-	Ordinal0 [0x00EC6B2D+224045]
-	Ordinal0 [0x00EC5BFC+220156]
-	Ordinal0 [0x00EC181B+202779]
-	Ordinal0 [0x00EA3D74+81268]
-	Ordinal0 [0x00EA4D6E+85358]
-	Ordinal0 [0x00EA4CF9+85241]
-	Ordinal0 [0x010B6F2C+2256684]
-	GetHandleVerifier [0x01342FAC+1478332]
-	GetHandleVerifier [0x01342AFD+1477133]
-	GetHandleVerifier [0x0134AAD8+1509864]
-	GetHandleVerifier [0x0134369E+1480110]
-	Ordinal0 [0x010AD6BD+2217661]
-	Ordinal0 [0x010B89AB+2263467]
-	Ordinal0 [0x010B8AEF+2263791]
-	Ordinal0 [0x010CD363+2347875]
-	BaseThreadInitThunk [0x752C6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77378944+228]
-	RtlGetAppContainerNamedObjectPath [0x77378914+180]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at mavenProject.googleLogin.TestEnvironment.testEnvironment(TestEnvironment.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1802736936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1802736936'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x011BECE3+3337443]
-	Ordinal0 [0x0109F041+2158657]
-	Ordinal0 [0x00F26E50+618064]
-	Ordinal0 [0x00F1D114+577812]
-	Ordinal0 [0x00F1D7DB+579547]
-	Ordinal0 [0x00F1EA45+584261]
-	Ordinal0 [0x00F19A71+563825]
-	Ordinal0 [0x00F27FD0+622544]
-	Ordinal0 [0x00EC6B2D+224045]
-	Ordinal0 [0x00EC5BFC+220156]
-	Ordinal0 [0x00EC181B+202779]
-	Ordinal0 [0x00EA3D74+81268]
-	Ordinal0 [0x00EA4D6E+85358]
-	Ordinal0 [0x00EA4CF9+85241]
-	Ordinal0 [0x010B6F2C+2256684]
-	GetHandleVerifier [0x01342FAC+1478332]
-	GetHandleVerifier [0x01342AFD+1477133]
-	GetHandleVerifier [0x0134AAD8+1509864]
-	GetHandleVerifier [0x0134369E+1480110]
-	Ordinal0 [0x010AD6BD+2217661]
-	Ordinal0 [0x010B89AB+2263467]
-	Ordinal0 [0x010B8AEF+2263791]
-	Ordinal0 [0x010CD363+2347875]
-	BaseThreadInitThunk [0x752C6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77378944+228]
-	RtlGetAppContainerNamedObjectPath [0x77378914+180]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at mavenProject.googleLogin.TestEnvironment.testEnvironment(TestEnvironment.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@4efc180e</td></tr>
-<tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername()'><b>invalidUsername</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x011BECE3+3337443]
-	Ordinal0 [0x0109F041+2158657]
-	Ordinal0 [0x00F26E50+618064]
-	Ordinal0 [0x00F1D114+577812]
-	Ordinal0 [0x00F1D7DB+579547]
-	Ordinal0 [0x00F1EA45+584261]
-	Ordinal0 [0x00F19A71+563825]
-	Ordinal0 [0x00F27FD0+622544]
-	Ordinal0 [0x00EC6B2D+224045]
-	Ordinal0 [0x00EC5BFC+220156]
-	Ordinal0 [0x00EC181B+202779]
-	Ordinal0 [0x00EA3D74+81268]
-	Ordinal0 [0x00EA4D6E+85358]
-	Ordinal0 [0x00EA4CF9+85241]
-	Ordinal0 [0x010B6F2C+2256684]
-	GetHandleVerifier [0x01342FAC+1478332]
-	GetHandleVerifier [0x01342AFD+1477133]
-	GetHandleVerifier [0x0134AAD8+1509864]
-	GetHandleVerifier [0x0134369E+1480110]
-	Ordinal0 [0x010AD6BD+2217661]
-	Ordinal0 [0x010B89AB+2263467]
-	Ordinal0 [0x010B8AEF+2263791]
-	Ordinal0 [0x010CD363+2347875]
-	BaseThreadInitThunk [0x752C6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77378944+228]
-	RtlGetAppContainerNamedObjectPath [0x77378914+180]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at mavenProject.googleLogin.TestEnvironment.testEnvironment(TestEnvironment.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace203472514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace203472514'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x011BECE3+3337443]
-	Ordinal0 [0x0109F041+2158657]
-	Ordinal0 [0x00F26E50+618064]
-	Ordinal0 [0x00F1D114+577812]
-	Ordinal0 [0x00F1D7DB+579547]
-	Ordinal0 [0x00F1EA45+584261]
-	Ordinal0 [0x00F19A71+563825]
-	Ordinal0 [0x00F27FD0+622544]
-	Ordinal0 [0x00EC6B2D+224045]
-	Ordinal0 [0x00EC5BFC+220156]
-	Ordinal0 [0x00EC181B+202779]
-	Ordinal0 [0x00EA3D74+81268]
-	Ordinal0 [0x00EA4D6E+85358]
-	Ordinal0 [0x00EA4CF9+85241]
-	Ordinal0 [0x010B6F2C+2256684]
-	GetHandleVerifier [0x01342FAC+1478332]
-	GetHandleVerifier [0x01342AFD+1477133]
-	GetHandleVerifier [0x0134AAD8+1509864]
-	GetHandleVerifier [0x0134369E+1480110]
-	Ordinal0 [0x010AD6BD+2217661]
-	Ordinal0 [0x010B89AB+2263467]
-	Ordinal0 [0x010B8AEF+2263791]
-	Ordinal0 [0x010CD363+2347875]
-	BaseThreadInitThunk [0x752C6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77378944+228]
-	RtlGetAppContainerNamedObjectPath [0x77378914+180]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at mavenProject.googleLogin.TestEnvironment.testEnvironment(TestEnvironment.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@4efc180e</td></tr>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
 </table><p>
 </body>
 </html>
