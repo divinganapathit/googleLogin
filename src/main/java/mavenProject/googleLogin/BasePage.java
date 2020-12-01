@@ -8,20 +8,26 @@ import java.util.ResourceBundle;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.asserts.SoftAssert;
 
 import mavenProject.utilities.ExcelData;
 
 public class BasePage {
-
-	static LoginPage login;
+	
 	WebDriver driver;
-	public static ResourceBundle getvalue = ResourceBundle.getBundle("inputData");
-//	public BasePage basePage = new BasePage(driver);
-	public static SoftAssert softAssert = new SoftAssert();
 
-	public static String getExcelData(int index) throws IOException {
+	public BasePage(WebDriver driver) {
+
+		this.driver = driver;
+
+	}
+
+	public ResourceBundle getvalue = ResourceBundle.getBundle("inputData");
+	TestEnvironment testEnvironment =new TestEnvironment();
+//	public BasePage basePage = new BasePage(driver);
+	public SoftAssert softAssert = new SoftAssert();
+
+	public String getExcelData(int index) throws IOException {
 
 		ExcelData expectedData = new ExcelData();
 		List<String> excelValue = new ArrayList<String>();
@@ -29,31 +35,25 @@ public class BasePage {
 		return excelValue.get(index);
 
 	}
-	
-	public WebDriver driverMethod() {
-		
-		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "\\src\\resource\\java\\chromedriver.exe");
-		driver = new ChromeDriver();
-		return driver;
-		
-	}
-
-//	public BasePage(WebDriver driver) {
-//
+//	
+//	public WebDriver driverMethod() {
+//		
 //		System.setProperty("webdriver.chrome.driver",
 //				System.getProperty("user.dir") + "\\src\\resource\\java\\chromedriver.exe");
-//		this.driver = driver;
+//		driver = new ChromeDriver();
+//		return driver;
+//		
+//	}
+
+
+
+//	public void entersLoginPageURL() {
+//
+//		driver.navigate().to(getData("url"));
 //
 //	}
-//
-	public void entersLoginPageURL() {
 
-		driver.navigate().to(getData("url"));
-
-	}
-
-	public static String getData(String key) {
+	public String getData(String key) {
 
 		return getvalue.getString(key);
 

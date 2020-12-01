@@ -40,17 +40,18 @@ public class LoginPage extends BasePage {
 	public WebElement logout_button;
 
 	
-	BasePage basePage =new BasePage();
-	
+
 	public LoginPage(WebDriver driver) {
 
+		super(driver);
 		PageFactory.initElements(driver, this);
-
+		
 	}
 
-	public void bothValid(WebDriver driver, String username, String password) {
+	public void bothValid( String username, String password) {
 
-		basePage.entersLoginPageURL();
+//		basePage.entersLoginPageURL();
+		driver.navigate().to(getData("url"));
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -65,9 +66,10 @@ public class LoginPage extends BasePage {
 
 	}
 
-	public void invalidPassword(WebDriver driver, String username, String password) throws IOException {
+	public void invalidPassword( String username, String password) throws IOException {
 
-		basePage.entersLoginPageURL();
+//		basePage.entersLoginPageURL();
+		driver.navigate().to(getData("url"));
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -76,16 +78,17 @@ public class LoginPage extends BasePage {
 		password_Next.click();
 		System.out.println(wrong_Password.toString());
 		System.out.println(wrong_Password);
-		basePage.delay(wrong_Password);
+//		basePage.delay(wrong_Password);
 		Assert.assertEquals(getExcelData(0), wrong_Password.getText());
 		System.out.println(wrong_Password.getText());
 		System.out.println("Could not login because of invalid Password");
 
 	}
 
-	public void invalidUsername(WebDriver driver, String username) throws IOException {
+	public void invalidUsername(String username) throws IOException {
 
-		basePage.entersLoginPageURL();
+//		basePage.entersLoginPageURL();
+		driver.navigate().to(getData("url"));
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -96,9 +99,10 @@ public class LoginPage extends BasePage {
 
 	}
 
-	public void bothInvalid(WebDriver driver, String username) throws IOException {
+	public void bothInvalid(String username) throws IOException {
 
-		basePage.entersLoginPageURL();
+//		basePage.entersLoginPageURL();
+		driver.navigate().to(getData("url"));
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -110,9 +114,10 @@ public class LoginPage extends BasePage {
 
 	}
 
-	public void clickNextWithoutEnteringPassword(WebDriver driver, String username) throws IOException {
+	public void clickNextWithoutEnteringPassword(String username) throws IOException {
 
-		basePage.entersLoginPageURL();
+//		basePage.entersLoginPageURL();
+		driver.navigate().to(getData("url"));
 		input_Username.sendKeys(username);
 		username_Next.click();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -126,7 +131,8 @@ public class LoginPage extends BasePage {
 
 	public void clickNextWithoutEnteringUsername() throws IOException {
 
-		basePage.entersLoginPageURL();
+//		basePage.entersLoginPageURL();
+		driver.navigate().to(getData("url"));
 		username_Next.click();
 		softAssert.assertEquals("Enter an email or phone number", username_NotFound.getText());
 		softAssert.assertTrue(getExcelData(4) == username_NotFound.getText(), "true");

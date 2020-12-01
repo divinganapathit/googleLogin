@@ -95,7 +95,7 @@ public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 		LoginPage login = new LoginPage(driver);
 
-		login.clickNextWithoutEnteringUsername();
+		login.clickNextWithoutEnteringUsername(driver);
 
 	}
 

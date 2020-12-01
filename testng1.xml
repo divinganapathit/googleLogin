@@ -4,7 +4,9 @@
 	<test thread-count="5" name="Test">
 		<parameter name="option" value="true" />
 		<classes>
-			<class name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
+<!-- 			<class name="mavenProject.googleLogin.TestEnvironment" /> -->
+			<class
+				name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
 				<methods>
 					<include name="bothValid" />
 					<include name="invalidpassword" />

@@ -2,12 +2,12 @@
 <testng-results ignored="2" total="6" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-30T18:26:24 IST" name="Suite" finished-at="2020-11-30T18:26:24 IST" duration-ms="200">
+  <suite started-at="2020-12-01T13:27:59 IST" name="Suite" finished-at="2020-12-01T13:27:59 IST" duration-ms="72">
     <groups>
     </groups>
-    <test started-at="2020-11-30T18:26:24 IST" name="Test" finished-at="2020-11-30T18:26:24 IST" duration-ms="200">
+    <test started-at="2020-12-01T13:27:59 IST" name="Test" finished-at="2020-12-01T13:27:59 IST" duration-ms="72">
       <class name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
-        <test-method is-config="true" signature="testEnvironment(java.lang.String)[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="testEnvironment" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1606740984048" status="FAIL">
+        <test-method is-config="true" signature="testEnvironment(java.lang.String)[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="testEnvironment" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1606809479906" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -40,7 +40,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEnvironment -->
-        <test-method signature="bothValid()[pri:1, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="bothValid" finished-at="2020-11-30T18:26:24 IST" duration-ms="0" status="SKIP">
+        <test-method signature="bothValid()[pri:1, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="bothValid" finished-at="2020-12-01T13:27:59 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -73,7 +73,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bothValid -->
-        <test-method signature="invalidpassword()[pri:2, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="invalidpassword" finished-at="2020-11-30T18:26:24 IST" duration-ms="0" status="SKIP">
+        <test-method signature="invalidpassword()[pri:2, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="invalidpassword" finished-at="2020-12-01T13:27:59 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -106,7 +106,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidpassword -->
-        <test-method signature="invalidUsername()[pri:3, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="invalidUsername" finished-at="2020-11-30T18:26:24 IST" duration-ms="0" status="SKIP">
+        <test-method signature="invalidUsername()[pri:3, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="invalidUsername" finished-at="2020-12-01T13:27:59 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -139,7 +139,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUsername -->
-        <test-method signature="bothInvalid()[pri:4, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="bothInvalid" finished-at="2020-11-30T18:26:24 IST" duration-ms="0" status="SKIP">
+        <test-method signature="bothInvalid()[pri:4, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:27:59 IST" name="bothInvalid" finished-at="2020-12-01T13:27:59 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -172,7 +172,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bothInvalid -->
-        <test-method is-config="true" signature="Endmethod()[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@65f87a2c]" started-at="2020-11-30T18:26:24 IST" name="Endmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1606740984585" status="SKIP">
+        <test-method is-config="true" signature="Endmethod()[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@16a0ee18]" started-at="2020-12-01T13:28:00 IST" name="Endmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1606809480098" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Endmethod -->
