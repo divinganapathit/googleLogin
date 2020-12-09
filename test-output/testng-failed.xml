@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="option" value="true"/>
+  <listeners>
+    <listener class-name="mavenProject.googleLogin.Listeners"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
@@ -11,9 +14,7 @@
           <include name="clickNextPassword"/>
           <include name="invalidUsername"/>
           <include name="Endmethod"/>
-          <include name="clickNextUsername"/>
           <include name="invalidpassword"/>
-          <include name="bothInvalid"/>
         </methods>
       </class> <!-- mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses -->
     </classes>

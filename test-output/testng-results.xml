@@ -1,13 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
+<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Open Chrome Browser in Incognito mode.
+]]>
+    </line>
+    <line>
+      <![CDATA[Maximize the browser window.
+]]>
+    </line>
+    <line>
+      <![CDATA[Method to be executed: bothValid]]>
+    </line>
+    <line>
+      <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+    </line>
+    <line>
+      <![CDATA[Enter a valid username that is stored in properties file.
+]]>
+    </line>
+    <line>
+      <![CDATA[Click on next.
+]]>
+    </line>
+    <line>
+      <![CDATA[Enter a valid password that is stored in properties file.
+]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='.\screenshot\Wed-Dec-09-18-50-58-IST-2020.png' alt='error screenshot' height='400' width='400'/><br>]]>
+    </line>
+    <line>
+      <![CDATA[Method to be executed: invalidpassword]]>
+    </line>
+    <line>
+      <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+    </line>
+    <line>
+      <![CDATA[Enter a valid username that is stored in properties file.
+]]>
+    </line>
+    <line>
+      <![CDATA[Click on next.
+]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='.\screenshot\Wed-Dec-09-18-51-10-IST-2020.png' alt='error screenshot' height='400' width='400'/><br>]]>
+    </line>
+    <line>
+      <![CDATA[Method to be executed: invalidUsername]]>
+    </line>
+    <line>
+      <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+    </line>
+    <line>
+      <![CDATA[Enter an invalid username that is stored in properties file.
+]]>
+    </line>
+    <line>
+      <![CDATA[Click on next.
+]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='.\screenshot\Wed-Dec-09-18-51-22-IST-2020.png' alt='error screenshot' height='400' width='400'/><br>]]>
+    </line>
+    <line>
+      <![CDATA[Method to be executed: bothInvalid]]>
+    </line>
+    <line>
+      <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+    </line>
+    <line>
+      <![CDATA[Enter an invalid username that is stored in properties file.
+]]>
+    </line>
+    <line>
+      <![CDATA[Click on next.
+]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution1]]>
+    </line>
+    <line>
+      <![CDATA[Method to be executed: clickNextPassword]]>
+    </line>
+    <line>
+      <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+    </line>
+    <line>
+      <![CDATA[Enter a valid username that is stored in properties file.
+]]>
+    </line>
+    <line>
+      <![CDATA[Click on next.
+]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='.\screenshot\Wed-Dec-09-18-51-36-IST-2020.png' alt='error screenshot' height='400' width='400'/><br>]]>
+    </line>
+    <line>
+      <![CDATA[Method to be executed: clickNextUsername]]>
+    </line>
+    <line>
+      <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+    </line>
+    <line>
+      <![CDATA[Click on next without entering the username.
+]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution1]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser window and end all browser related tasks.]]>
+    </line>
   </reporter-output>
-  <suite started-at="2020-12-01T18:23:17 IST" name="Suite" finished-at="2020-12-01T18:23:17 IST" duration-ms="145">
+  <suite started-at="2020-12-09T18:50:37 IST" name="Suite" finished-at="2020-12-09T18:51:37 IST" duration-ms="60528">
     <groups>
     </groups>
-    <test started-at="2020-12-01T18:23:17 IST" name="Test" finished-at="2020-12-01T18:23:17 IST" duration-ms="145">
+    <test started-at="2020-12-09T18:50:37 IST" name="Test" finished-at="2020-12-09T18:51:37 IST" duration-ms="60528">
       <class name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
-        <test-method is-config="true" signature="testEnvironment(java.lang.String)[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:09 IST" name="testEnvironment" finished-at="2020-12-01T18:23:17 IST" duration-ms="7964" status="PASS">
+        <test-method is-config="true" signature="testEnvironment(java.lang.String)[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b]" started-at="2020-12-09T18:50:30 IST" name="testEnvironment" finished-at="2020-12-09T18:50:37 IST" duration-ms="6535" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,13 +135,56 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Open Chrome Browser in Incognito mode.
+]]>
+            </line>
+            <line>
+              <![CDATA[Maximize the browser window.
+]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testEnvironment -->
-        <test-method signature="bothValid()[pri:1, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="bothValid" finished-at="2020-12-01T18:23:17 IST" duration-ms="10" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="bothValid()[pri:1, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b]" started-at="2020-12-09T18:50:37 IST" name="bothValid" finished-at="2020-12-09T18:50:58 IST" duration-ms="21029" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:43)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:55)
 at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -54,15 +216,73 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
+            <line>
+              <![CDATA[Method to be executed: bothValid]]>
+            </line>
+            <line>
+              <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+            </line>
+            <line>
+              <![CDATA[Enter a valid username that is stored in properties file.
+]]>
+            </line>
+            <line>
+              <![CDATA[Click on next.
+]]>
+            </line>
+            <line>
+              <![CDATA[Enter a valid password that is stored in properties file.
+]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='.\screenshot\Wed-Dec-09-18-50-58-IST-2020.png' alt='error screenshot' height='400' width='400'/><br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- bothValid -->
-        <test-method signature="invalidpassword()[pri:2, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="invalidpassword" finished-at="2020-12-01T18:23:17 IST" duration-ms="5" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="invalidpassword()[pri:2, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b]" started-at="2020-12-09T18:50:58 IST" name="invalidpassword" finished-at="2020-12-09T18:51:10 IST" duration-ms="11339" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression @class='whsOnd zHQkBf' and @type='password'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '@class='whsOnd zHQkBf' and @type='password']' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=@class='whsOnd zHQkBf' and @type='password']}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:62)
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression @class='whsOnd zHQkBf' and @type='password'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '@class='whsOnd zHQkBf' and @type='password']' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=@class='whsOnd zHQkBf' and @type='password']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+at mavenProject.googleLogin.BasePage.delay(BasePage.java:53)
+at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:75)
 at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -94,15 +314,69 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
+            <line>
+              <![CDATA[Method to be executed: invalidpassword]]>
+            </line>
+            <line>
+              <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+            </line>
+            <line>
+              <![CDATA[Enter a valid username that is stored in properties file.
+]]>
+            </line>
+            <line>
+              <![CDATA[Click on next.
+]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='.\screenshot\Wed-Dec-09-18-51-10-IST-2020.png' alt='error screenshot' height='400' width='400'/><br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- invalidpassword -->
-        <test-method signature="invalidUsername()[pri:3, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="invalidUsername" finished-at="2020-12-01T18:23:17 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="invalidUsername()[pri:3, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b]" started-at="2020-12-09T18:51:10 IST" name="invalidUsername" finished-at="2020-12-09T18:51:22 IST" duration-ms="12384" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'o6cuMc')]"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=//div[contains(@class,'o6cuMc')]}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:82)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'o6cuMc')]"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=//div[contains(@class,'o6cuMc')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.getText(Unknown Source)
+at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:101)
 at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -134,56 +408,92 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Method to be executed: invalidUsername]]>
+            </line>
+            <line>
+              <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+            </line>
+            <line>
+              <![CDATA[Enter an invalid username that is stored in properties file.
+]]>
+            </line>
+            <line>
+              <![CDATA[Click on next.
+]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='.\screenshot\Wed-Dec-09-18-51-22-IST-2020.png' alt='error screenshot' height='400' width='400'/><br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- invalidUsername -->
-        <test-method signature="bothInvalid()[pri:4, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="bothInvalid" finished-at="2020-12-01T18:23:17 IST" duration-ms="6" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at mavenProject.googleLogin.LoginPage.bothInvalid(LoginPage.java:96)
-at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:62)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="bothInvalid()[pri:4, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b]" started-at="2020-12-09T18:51:23 IST" name="bothInvalid" finished-at="2020-12-09T18:51:24 IST" duration-ms="1787" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Method to be executed: bothInvalid]]>
+            </line>
+            <line>
+              <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+            </line>
+            <line>
+              <![CDATA[Enter an invalid username that is stored in properties file.
+]]>
+            </line>
+            <line>
+              <![CDATA[Click on next.
+]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution1]]>
+            </line>
           </reporter-output>
         </test-method> <!-- bothInvalid -->
-        <test-method signature="clickNextPassword()[pri:5, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="clickNextPassword" finished-at="2020-12-01T18:23:17 IST" duration-ms="8" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="clickNextPassword()[pri:5, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b]" started-at="2020-12-09T18:51:24 IST" name="clickNextPassword" finished-at="2020-12-09T18:51:36 IST" duration-ms="11319" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression @class='whsOnd zHQkBf' and @type='password'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '@class='whsOnd zHQkBf' and @type='password']' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=@class='whsOnd zHQkBf' and @type='password']}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:111)
-at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:74)
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression @class='whsOnd zHQkBf' and @type='password'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '@class='whsOnd zHQkBf' and @type='password']' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2Q47I0S4', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=@class='whsOnd zHQkBf' and @type='password']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+at mavenProject.googleLogin.BasePage.delay(BasePage.java:53)
+at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:135)
+at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:75)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -214,52 +524,51 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
+            <line>
+              <![CDATA[Method to be executed: clickNextPassword]]>
+            </line>
+            <line>
+              <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+            </line>
+            <line>
+              <![CDATA[Enter a valid username that is stored in properties file.
+]]>
+            </line>
+            <line>
+              <![CDATA[Click on next.
+]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='.\screenshot\Wed-Dec-09-18-51-36-IST-2020.png' alt='error screenshot' height='400' width='400'/><br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- clickNextPassword -->
-        <test-method signature="clickNextUsername()[pri:6, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="clickNextUsername" finished-at="2020-12-01T18:23:17 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringUsername(LoginPage.java:126)
-at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:87)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="clickNextUsername()[pri:6, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b]" started-at="2020-12-09T18:51:36 IST" name="clickNextUsername" finished-at="2020-12-09T18:51:37 IST" duration-ms="1371" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Method to be executed: clickNextUsername]]>
+            </line>
+            <line>
+              <![CDATA[Go on to URL -"https://accounts.google.com/".
+]]>
+            </line>
+            <line>
+              <![CDATA[Click on next without entering the username.
+]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution1]]>
+            </line>
           </reporter-output>
         </test-method> <!-- clickNextUsername -->
-        <test-method is-config="true" signature="Endmethod()[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82]" started-at="2020-12-01T18:23:17 IST" name="Endmethod" finished-at="2020-12-01T18:23:18 IST" duration-ms="719" status="PASS">
+        <test-method is-config="true" signature="Endmethod()[pri:0, instance:mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b]" started-at="2020-12-09T18:51:37 IST" name="Endmethod" finished-at="2020-12-09T18:51:39 IST" duration-ms="1290" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Close the browser window and end all browser related tasks.]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Endmethod -->
       </class> <!-- mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses -->

@@ -10,6 +10,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import mavenProject.googleLogin.LoginPage;
+
 public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 	WebDriver driver;
@@ -64,7 +66,7 @@ public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 		LoginPage login = new LoginPage(driver);
 
-		login.invalidUsername(getValue.getString("i_Username"));
+		login.invalidUsername( getValue.getString("i_Username"));
 
 	}
 
@@ -86,7 +88,7 @@ public class TestLoginToGoogleAccountUsingTestNG_NativeMethods {
 
 		LoginPage login = new LoginPage(driver);
 
-		login.clickNextWithoutEnteringPassword(getValue.getString("v_Username"));
+		login.clickNextWithoutEnteringPassword( getValue.getString("v_Username"));
 
 	}
 

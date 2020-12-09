@@ -1,13 +1,21 @@
 package mavenProject.googleLogin;
 
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
 import mavenProject.utilities.ExcelData;
@@ -57,6 +65,16 @@ public class BasePage {
 		}
 
 		return status;
+	}
+	
+	public void getScreenShot() throws IOException {
+		
+		Date currentDate = new Date();
+		String screenshotFileName = currentDate.toString().replace(" ", "-").replace(":", "-");
+		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File screenshotFolder =  new File(".//screenshot//"+ screenshotFileName+".png");
+		FileUtils.copyFile(screenshotFile,screenshotFolder);
+		Reporter.log("<br><img src='"+screenshotFolder+"' alt='error screenshot' height='400' width='400'/><br>");
 	}
 
 }

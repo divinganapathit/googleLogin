@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 01 18:23:17 IST 2020</td>
+<td>Started on:</td><td>Wed Dec 09 18:50:37 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (145 ms)</td>
+<tr><td>Total time:</td><td>60 seconds (60528 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,55 +75,72 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid()'><b>bothInvalid</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td><div><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.bothInvalid(LoginPage.java:96)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:62)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace502891368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace502891368'><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.bothInvalid(LoginPage.java:96)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:62)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
-<tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid()'><b>bothValid</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td><div><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:43)
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid()'><b>bothValid</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses<br/>
+<a href="#Output-1195542839" onClick='toggleBox("Output-1195542839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1195542839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1195542839">
+Method to be executed: bothValid<br/>
+Go on to URL -"https://accounts.google.com/".
+<br/>
+Enter a valid username that is stored in properties file.
+<br/>
+Click on next.
+<br/>
+Enter a valid password that is stored in properties file.
+<br/>
+<br><img src='.\screenshot\Wed-Dec-09-18-50-58-IST-2020.png' alt='error screenshot' height='400' width='400'/><br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:55)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1091107430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1091107430'><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:43)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1195542839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195542839'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:55)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -154,18 +171,76 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
+<td>21</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b</td></tr>
 <tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword()'><b>clickNextPassword</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td><div><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:111)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:74)
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword()'><b>clickNextPassword</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses<br/>
+<a href="#Output-1147943200" onClick='toggleBox("Output-1147943200", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1147943200" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1147943200">
+Method to be executed: clickNextPassword<br/>
+Go on to URL -"https://accounts.google.com/".
+<br/>
+Enter a valid username that is stored in properties file.
+<br/>
+Click on next.
+<br/>
+<br><img src='.\screenshot\Wed-Dec-09-18-51-36-IST-2020.png' alt='error screenshot' height='400' width='400'/><br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression @class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]&apos; is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at mavenProject.googleLogin.BasePage.delay(BasePage.java:53)
+	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:135)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace577734751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace577734751'><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:111)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:74)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1147943200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1147943200'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression @class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]&apos; is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at mavenProject.googleLogin.BasePage.delay(BasePage.java:53)
+	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:135)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:75)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -195,58 +270,77 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
+<td>11</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b</td></tr>
 <tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername()'><b>clickNextUsername</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td><div><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringUsername(LoginPage.java:126)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:87)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2103569615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2103569615'><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringUsername(LoginPage.java:126)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:87)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
-<tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername()'><b>invalidUsername</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td><div><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:82)
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername()'><b>invalidUsername</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses<br/>
+<a href="#Output-1801422599" onClick='toggleBox("Output-1801422599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1801422599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1801422599">
+Method to be executed: invalidUsername<br/>
+Go on to URL -"https://accounts.google.com/".
+<br/>
+Enter an invalid username that is stored in properties file.
+<br/>
+Click on next.
+<br/>
+<br><img src='.\screenshot\Wed-Dec-09-18-51-22-IST-2020.png' alt='error screenshot' height='400' width='400'/><br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;o6cuMc&apos;)]&quot;}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;o6cuMc&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.getText(Unknown Source)
+	at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:101)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:50)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1177072083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1177072083'><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:82)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1801422599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1801422599'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;o6cuMc&apos;)]&quot;}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;o6cuMc&apos;)]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.getText(Unknown Source)
+	at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:101)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -277,17 +371,75 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
+<td>12</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b</td></tr>
 <tr>
-<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword()'><b>invalidpassword</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses</td>
-<td><div><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:62)
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword()'><b>invalidpassword</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses<br/>
+<a href="#Output-417875774" onClick='toggleBox("Output-417875774", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-417875774" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-417875774">
+Method to be executed: invalidpassword<br/>
+Go on to URL -"https://accounts.google.com/".
+<br/>
+Enter a valid username that is stored in properties file.
+<br/>
+Click on next.
+<br/>
+<br><img src='.\screenshot\Wed-Dec-09-18-51-10-IST-2020.png' alt='error screenshot' height='400' width='400'/><br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression @class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]&apos; is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at mavenProject.googleLogin.BasePage.delay(BasePage.java:53)
+	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:75)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace883678948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace883678948'><pre>java.lang.NullPointerException
-	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:62)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace417875774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace417875774'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression @class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]&apos; is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+*** Element info: {Using=xpath, value=@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at mavenProject.googleLogin.BasePage.delay(BasePage.java:53)
+	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:75)
 	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -318,8 +470,52 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@78123e82</td></tr>
+<td>11</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothInvalid()'><b>bothInvalid</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses<br/>
+<a href="#Output-376601041" onClick='toggleBox("Output-376601041", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-376601041" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-376601041">
+Method to be executed: bothInvalid<br/>
+Go on to URL -"https://accounts.google.com/".
+<br/>
+Enter an invalid username that is stored in properties file.
+<br/>
+Click on next.
+<br/>
+Status of execution1<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b</td></tr>
+<tr>
+<td title='mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextUsername()'><b>clickNextUsername</b><br>Test class: mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses<br/>
+<a href="#Output-820422499" onClick='toggleBox("Output-820422499", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-820422499" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-820422499">
+Method to be executed: clickNextUsername<br/>
+Go on to URL -"https://accounts.google.com/".
+<br/>
+Click on next without entering the username.
+<br/>
+Status of execution1<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses@609db43b</td></tr>
 </table><p>
 </body>
 </html>
