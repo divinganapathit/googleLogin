@@ -66,15 +66,26 @@ public class BasePage {
 
 		return status;
 	}
-	
+
 	public void getScreenShot() throws IOException {
-		
+
 		Date currentDate = new Date();
 		String screenshotFileName = currentDate.toString().replace(" ", "-").replace(":", "-");
-		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File screenshotFolder =  new File(".//screenshot//"+ screenshotFileName+".png");
-		FileUtils.copyFile(screenshotFile,screenshotFolder);
-		Reporter.log("<br><img src='"+screenshotFolder+"' alt='error screenshot' height='400' width='400'/><br>");
+		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File screenshotFolder = new File(".//screenshot//" + screenshotFileName + ".png");
+		FileUtils.copyFile(screenshotFile, screenshotFolder);
+		Reporter.log("<br><img src='" + screenshotFolder + "' alt='error screenshot' height='400' width='400'/><br>");
+	}
+
+	public String capture() throws IOException {
+		Date currentDate = new Date();
+		String screenshotFileName = currentDate.toString().replace(" ", "-").replace(":", "-");
+		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String destination = ".//screenshot//" + screenshotFileName + ".png";
+		File screenshotFolder = new File(destination);
+		FileUtils.copyFile(screenshotFile, screenshotFolder);
+
+		return destination;
 	}
 
 }

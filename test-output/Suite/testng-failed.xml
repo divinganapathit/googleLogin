@@ -10,11 +10,12 @@
       <class name="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses">
         <methods>
           <include name="testEnvironment"/>
-          <include name="bothValid"/>
+          <include name="setExtent"/>
           <include name="clickNextPassword"/>
           <include name="invalidUsername"/>
           <include name="Endmethod"/>
-          <include name="invalidpassword"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses -->
     </classes>

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,22 +104,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses" class="method navigator-link" hash-for-method="bothValid">bothValid</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses" class="method navigator-link" hash-for-method="clickNextPassword">clickNextPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses" class="method navigator-link" hash-for-method="invalidUsername">invalidUsername</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses" class="method navigator-link" hash-for-method="invalidpassword">invalidpassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -138,7 +128,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses" class="method navigator-link" hash-for-method="bothValid">bothValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses" class="method navigator-link" hash-for-method="clickNextUsername">clickNextUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses" class="method navigator-link" hash-for-method="invalidpassword">invalidpassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -161,36 +161,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bothValid">
-                  </a> <!-- bothValid -->
-                  <span class="method-name">bothValid</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at mavenProject.googleLogin.LoginPage.bothValid(LoginPage.java:55)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.bothValid(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="clickNextPassword">
                   </a> <!-- clickNextPassword -->
                   <span class="method-name">clickNextPassword</span>
@@ -201,8 +171,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54107}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6fbe5bef25fef5b8f23a07eb9b0c8ddf
 *** Element info: {Using=xpath, value=@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -216,7 +186,7 @@ Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
 	at mavenProject.googleLogin.BasePage.delay(BasePage.java:53)
 	at mavenProject.googleLogin.LoginPage.clickNextWithoutEnteringPassword(LoginPage.java:135)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:75)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.clickNextPassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:88)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -233,8 +203,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54107}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6fbe5bef25fef5b8f23a07eb9b0c8ddf
 *** Element info: {Using=xpath, value=//div[contains(@class,&apos;o6cuMc&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -248,42 +218,9 @@ Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.getText(Unknown Source)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
 	at mavenProject.googleLogin.LoginPage.invalidUsername(LoginPage.java:101)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidpassword">
-                  </a> <!-- invalidpassword -->
-                  <span class="method-name">invalidpassword</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression @class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]&apos; is not a valid XPath expression.
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-2Q47I0S4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Com\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
-*** Element info: {Using=xpath, value=@class=&apos;whsOnd zHQkBf&apos; and @type=&apos;password&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at mavenProject.googleLogin.BasePage.delay(BasePage.java:53)
-	at mavenProject.googleLogin.LoginPage.invalidPassword(LoginPage.java:75)
-	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidpassword(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:38)
+	at mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses.invalidUsername(TestLoginGoogleAccountUsingTestNG_DifferentClasses.java:61)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -306,9 +243,23 @@ Session ID: dbcd07b5aa01e11539bdbc07d7298c7b
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="bothValid">
+                  </a> <!-- bothValid -->
+                  <span class="method-name">bothValid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="clickNextUsername">
                   </a> <!-- clickNextUsername -->
                   <span class="method-name">clickNextUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidpassword">
+                  </a> <!-- invalidpassword -->
+                  <span class="method-name">invalidpassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -380,34 +331,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bothValid')
+data.setCell(0, 1, 'clickNextPassword')
 data.setCell(0, 2, 'mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses')
-data.setCell(0, 3, 21029);
+data.setCell(0, 3, 11374);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'invalidUsername')
 data.setCell(1, 2, 'mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses')
-data.setCell(1, 3, 12384);
+data.setCell(1, 3, 11307);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidpassword')
+data.setCell(2, 1, 'bothValid')
 data.setCell(2, 2, 'mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses')
-data.setCell(2, 3, 11339);
+data.setCell(2, 3, 7941);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickNextPassword')
+data.setCell(3, 1, 'invalidpassword')
 data.setCell(3, 2, 'mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses')
-data.setCell(3, 3, 11319);
+data.setCell(3, 3, 3918);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'bothInvalid')
 data.setCell(4, 2, 'mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses')
-data.setCell(4, 3, 1787);
+data.setCell(4, 3, 1848);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'clickNextUsername')
 data.setCell(5, 2, 'mavenProject.googleLogin.TestLoginGoogleAccountUsingTestNG_DifferentClasses')
-data.setCell(5, 3, 1371);
+data.setCell(5, 3, 1424);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 59 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -419,12 +370,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">bothInvalid</span>
+              <span class="reporter-method-name">bothValid</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method to be executed: bothInvalid</span>
+                <span class="reporter-method-output">Method to be executed: bothValid</span>
                 <span class="reporter-method-output">Go on to URL -"https://accounts.google.com/".
 </span>
-                <span class="reporter-method-output">Enter an invalid username that is stored in properties file.
+                <span class="reporter-method-output">Enter a valid username that is stored in properties file.
+</span>
+                <span class="reporter-method-output">Click on next.
+</span>
+                <span class="reporter-method-output">Enter a valid password that is stored in properties file.
 </span>
                 <span class="reporter-method-output">Click on next.
 </span>
@@ -443,18 +398,16 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">bothValid</span>
+              <span class="reporter-method-name">bothInvalid</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Method to be executed: bothValid</span>
+                <span class="reporter-method-output">Method to be executed: bothInvalid</span>
                 <span class="reporter-method-output">Go on to URL -"https://accounts.google.com/".
 </span>
-                <span class="reporter-method-output">Enter a valid username that is stored in properties file.
+                <span class="reporter-method-output">Enter an invalid username that is stored in properties file.
 </span>
                 <span class="reporter-method-output">Click on next.
 </span>
-                <span class="reporter-method-output">Enter a valid password that is stored in properties file.
-</span>
-                <span class="reporter-method-output"><br><img src='.\screenshot\Wed-Dec-09-18-50-58-IST-2020.png' alt='error screenshot' height='400' width='400'/><br></span>
+                <span class="reporter-method-output">Status of execution1</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -467,7 +420,11 @@ return data;
 </span>
                 <span class="reporter-method-output">Click on next.
 </span>
-                <span class="reporter-method-output"><br><img src='.\screenshot\Wed-Dec-09-18-51-10-IST-2020.png' alt='error screenshot' height='400' width='400'/><br></span>
+                <span class="reporter-method-output">Enter an invalid password that is stored in properties file.
+</span>
+                <span class="reporter-method-output">Click on next.
+</span>
+                <span class="reporter-method-output">Status of execution1</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -480,7 +437,7 @@ return data;
 </span>
                 <span class="reporter-method-output">Click on next.
 </span>
-                <span class="reporter-method-output"><br><img src='.\screenshot\Wed-Dec-09-18-51-22-IST-2020.png' alt='error screenshot' height='400' width='400'/><br></span>
+                <span class="reporter-method-output"><br><img src='.\screenshot\Fri-Dec-11-11-38-33-IST-2020.png' alt='error screenshot' height='400' width='400'/><br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -493,7 +450,7 @@ return data;
 </span>
                 <span class="reporter-method-output">Click on next.
 </span>
-                <span class="reporter-method-output"><br><img src='.\screenshot\Wed-Dec-09-18-51-36-IST-2020.png' alt='error screenshot' height='400' width='400'/><br></span>
+                <span class="reporter-method-output"><br><img src='.\screenshot\Fri-Dec-11-11-38-47-IST-2020.png' alt='error screenshot' height='400' width='400'/><br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -516,41 +473,69 @@ return data;
                 <span class="method-name">testEnvironment(true)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">6166 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">bothValid</span>
-                <span class="method-start">6560 ms</span>
+                <span class="method-start">6366 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=bothValid status=SUCCESS method=TestLoginGoogleAccountUsingTestNG_DifferentClasses....)</span>
+                <span class="method-start">14311 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">invalidpassword</span>
-                <span class="method-start">27955 ms</span>
+                <span class="method-start">14328 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidpassword status=SUCCESS method=TestLoginGoogleAccountUsingTestNG_DifferentCl...)</span>
+                <span class="method-start">18248 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">invalidUsername</span>
-                <span class="method-start">39611 ms</span>
+                <span class="method-start">18250 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidUsername status=FAILURE method=TestLoginGoogleAccountUsingTestNG_DifferentCl...)</span>
+                <span class="method-start">29919 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">bothInvalid</span>
-                <span class="method-start">52285 ms</span>
+                <span class="method-start">30213 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=bothInvalid status=SUCCESS method=TestLoginGoogleAccountUsingTestNG_DifferentClasse...)</span>
+                <span class="method-start">32063 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">clickNextPassword</span>
-                <span class="method-start">54074 ms</span>
+                <span class="method-start">32064 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=clickNextPassword status=FAILURE method=TestLoginGoogleAccountUsingTestNG_Different...)</span>
+                <span class="method-start">43771 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">clickNextUsername</span>
-                <span class="method-start">65688 ms</span>
+                <span class="method-start">44081 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=clickNextUsername status=SUCCESS method=TestLoginGoogleAccountUsingTestNG_Different...)</span>
+                <span class="method-start">45506 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">45508 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">Endmethod</span>
-                <span class="method-start">67176 ms</span>
+                <span class="method-start">45957 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -15,8 +15,16 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 public class TestEnvironment {
 	static WebDriver driver;
+	public ExtentReports extent;
+	public ExtentTest extentTest;
+	public ExtentHtmlReporter htmlReport;
 
 	@BeforeSuite(alwaysRun = true)
 	@Parameters({"option"})
@@ -51,6 +59,26 @@ public class TestEnvironment {
 	public void Endmethod() {
 		Reporter.log("Close the browser window and end all browser related tasks.");
 		driver.quit();
+	}
+	
+	@BeforeTest
+	public void setExtent() {
+
+		htmlReport = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/ExtentReport.html");
+		htmlReport.config().setDocumentTitle("Automation testing");
+		htmlReport.config().setEncoding("utf-8");
+		htmlReport.config().setReportName("Google Login Testing");
+		htmlReport.config().setTheme(Theme.DARK);
+		
+		extent =new ExtentReports();
+		extent.attachReporter(htmlReport);
+	}
+	
+	
+	@AfterTest
+	public void endReport() {
+		
+		extent.flush();
 	}
 
 }
